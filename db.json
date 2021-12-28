@@ -1,0 +1,51 @@
+{
+  "final-fantasy-x": [
+      {
+        "id": 1, 
+        "name": "Tidus", 
+        "weapon": "sword",
+        "celestial": "Caladbolg"
+      },
+      {
+        "id": 2, 
+        "name": "Auron", 
+        "weapon": "katana",
+        "celestial": "Masamune"
+      },
+      {
+        "id": 3, 
+        "name": "Wakka", 
+        "weapon": "blitzball",
+        "celestial": "World Champion"
+      },
+      {
+        "id": 4, 
+        "name": "Yuna", 
+        "weapon": "rod",
+        "celestial": "Nirvana"
+      },
+      {
+        "id": 5, 
+        "name": "Lulu", 
+        "weapon": "doll",
+        "celestial": "Onion Knight"
+      },
+      {
+        "id": 6, 
+        "name": "Kimari", 
+        "weapon": "spear",
+        "celestial": "Spirt Lance"
+      },
+      {
+        "id": 7, 
+        "name": "Rikku", 
+        "weapon": "claws",
+        "celestial": "Godhand"
+      }  
+  ],
+    "story": [
+      {
+        "began": "heres where it all started"
+      }
+    ]
+}
