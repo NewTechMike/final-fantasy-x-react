@@ -1,18 +1,17 @@
 import React from "react"
 
-function ListCharacters({name, celesital}){
-
+function List({names}){
+  
   // The style of each character rendered
   // next step, use this to render Cel weapons
 
   return(
     <ul>
       <h2 style={{color: "green"}} text-align="center">
-        {name}
-        {celesital}
+        {names}
       </h2>
     </ul>
   )
 }
 
-export default ListCharacters;
+export default List;
