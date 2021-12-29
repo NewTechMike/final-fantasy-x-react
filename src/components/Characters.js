@@ -1,6 +1,5 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import List from "./List"
-import CelestialWeapons from "./CelestialWeapons";
 
 //1. This component will render each of the Characters from FFX
 //2. When clicking each name, the characters title will show
@@ -8,9 +7,9 @@ import CelestialWeapons from "./CelestialWeapons";
 function Characters({id, names}){
   
   console.log("names: ", names)
-  const displayChars = names.map((char)=> {
+  const displayChars = names.map((char, id)=> {
     return <List 
-      key={char}
+      key={id}
       names={char}
       />
     }

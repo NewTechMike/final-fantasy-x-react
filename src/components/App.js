@@ -25,7 +25,7 @@ function App() {
     }
   )
 
-  const actors = chars.map((char) =>{
+  const names = chars.map((char) =>{
      return char.name
     }
   )
@@ -34,8 +34,8 @@ function App() {
     return char.celestial
     }
   )
-  console.log(chars.name)
-  console.log("Actor: ", actors)
+
+  console.log("Names: ", names)
   return (
     <div className="App">
       <NavBar />
@@ -44,7 +44,7 @@ function App() {
             <Home />
           </Route>
           <Route path="/characters">
-            <Characters id={key} names={actors}/>
+            <Characters id={key} names={names}/>
           </Route>
           <Route path="/celestialweapons">
             <CelestialWeapons id={key} celestial={weapons} />
