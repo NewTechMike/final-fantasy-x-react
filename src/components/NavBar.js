@@ -21,7 +21,7 @@ function NavBar(){
         exact
         style={linkStyles}
         activeStyle={{
-          background: "goldenrod",
+          background: "gold",
         }}
       >
         Home
@@ -31,7 +31,7 @@ function NavBar(){
         exact
         style={linkStyles}
         activeStyle={{
-          background: "goldenrod",
+          background: "gold",
         }}
         >
           Characters
@@ -41,10 +41,30 @@ function NavBar(){
           exact
           style={linkStyles}
           activeStyle={{
-            background: "goldenrod",
+            background: "gold",
           }}
         >
             Celestial Weapons
+        </NavLink>
+        <NavLink
+          to="/story"
+          exact
+          style={linkStyles}
+          activeStyle={{
+            background: "gold",
+          }}
+        >
+            Story
+        </NavLink>
+        <NavLink
+          to="/newchar"
+          exact
+          style={linkStyles}
+          activeStyle={{
+            background: "gold",
+          }}
+        >
+            New Character Form
         </NavLink>
       {/*continue with the other components 
       like "characters and celestial weapons" */}

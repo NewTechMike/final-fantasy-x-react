@@ -9,6 +9,10 @@ body {
   background-image: Linear-gradient( to bottom right, rgb(4, 8, 49), blue);
 }
 
+./story{
+  font-size: 100;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;

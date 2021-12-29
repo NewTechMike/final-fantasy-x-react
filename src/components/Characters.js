@@ -17,7 +17,7 @@ function Characters({id, names}){
 
   return( 
     <div>
-      <h1> Welcome to the Characters Page!</h1>
+      <h1 style={{color: "silver"}}> Welcome to the Characters Page!</h1>
        {displayChars}
     </div>
   )
