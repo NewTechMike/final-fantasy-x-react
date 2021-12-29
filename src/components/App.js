@@ -30,11 +30,9 @@ function App() {
   },[]);
   
   const beginning = story.map((data)=>{
-    console.log("data: ", data)
     return data.began
     }
   )
-  console.log("story: ", beginning)
   
   const key = chars.map((char) =>{
     return char.id
@@ -51,7 +49,12 @@ function App() {
     }
   )
 
-  console.log("Names: ", names)
+  function handleAddNewChar(newChar){
+    setChars([...chars, newChar])
+    console.log("newChar: ", newChar)
+    console.log("newChars: ", chars)
+  }
+
   return (
     <div className="App">
       <NavBar />
@@ -69,7 +72,7 @@ function App() {
             <Story story={beginning}/>
           </Route>
           <Route path="/newchar">
-            <NewChar />
+            <NewChar onAddNewChar={handleAddNewChar}/>
           </Route>
         </Switch>
     </div>

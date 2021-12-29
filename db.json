@@ -1,52 +1,60 @@
 {
   "final-fantasy-x": [
-      {
-        "id": 1, 
-        "name": "Tidus", 
-        "weapon": "sword",
-        "celestial": "Caladbolg"
-      },
-      {
-        "id": 2, 
-        "name": "Auron", 
-        "weapon": "katana",
-        "celestial": "Masamune"
-      },
-      {
-        "id": 3, 
-        "name": "Wakka", 
-        "weapon": "blitzball",
-        "celestial": "World Champion"
-      },
-      {
-        "id": 4, 
-        "name": "Yuna", 
-        "weapon": "rod",
-        "celestial": "Nirvana"
-      },
-      {
-        "id": 5, 
-        "name": "Lulu", 
-        "weapon": "doll",
-        "celestial": "Onion Knight"
-      },
-      {
-        "id": 6, 
-        "name": "Kimari", 
-        "weapon": "spear",
-        "celestial": "Spirt Lance"
-      },
-      {
-        "id": 7, 
-        "name": "Rikku", 
-        "weapon": "claws",
-        "celestial": "Godhand"
-      }  
+    {
+      "id": 1,
+      "name": "Tidus",
+      "weapon": "sword",
+      "celestial": "Caladbolg"
+    },
+    {
+      "id": 2,
+      "name": "Auron",
+      "weapon": "katana",
+      "celestial": "Masamune"
+    },
+    {
+      "id": 3,
+      "name": "Wakka",
+      "weapon": "blitzball",
+      "celestial": "World Champion"
+    },
+    {
+      "id": 4,
+      "name": "Yuna",
+      "weapon": "rod",
+      "celestial": "Nirvana"
+    },
+    {
+      "id": 5,
+      "name": "Lulu",
+      "weapon": "doll",
+      "celestial": "Onion Knight"
+    },
+    {
+      "id": 6,
+      "name": "Kimari",
+      "weapon": "spear",
+      "celestial": "Spirt Lance"
+    },
+    {
+      "id": 7,
+      "name": "Rikku",
+      "weapon": "claws",
+      "celestial": "Godhand"
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "id": 10
+    }
   ],
-    "story": [
-      {
-        "began": 
-        "The story of Final Fantasy X is told by Tidus, a sports star from the futuristic metropolis called Zanarkand. During a match, Tidus gets swept up to another world and joins Summoner Yuna and her friends on her journey to save the world of Spira from a rampaging monster known as Sin. Making their way toward the mythical Zanarkand while running into the corrupt undercurrent of Spira's society, Tidus holds onto the hope he will one day find his way back home."
-      }
-    ]
+  "story": [
+    {
+      "began": "The story of Final Fantasy X is told by Tidus, a sports star from the futuristic metropolis called Zanarkand. During a match, Tidus gets swept up to another world and joins Summoner Yuna and her friends on her journey to save the world of Spira from a rampaging monster known as Sin. Making their way toward the mythical Zanarkand while running into the corrupt undercurrent of Spira's society, Tidus holds onto the hope he will one day find his way back home."
+    }
+  ]
 }
