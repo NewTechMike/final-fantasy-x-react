@@ -1,8 +1,9 @@
 import React, { useState } from "react"
 
-function NewChar({onAddNewChar}){
+function NewChar({onAddNewChar, onAddNewWeap}){
   const [nameData, setNameData] = useState({
-    name:''
+    name:'',
+    celestial: ''
   });
 
   function handleChange(event){
@@ -22,33 +23,47 @@ function NewChar({onAddNewChar}){
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
-      "name": nameData.name
+      "name": nameData.name,
+      "celestial": nameData.celestial
     }),
   })
   onAddNewChar(nameData)
+  onAddNewWeap(nameData)
     /* .then((resp)=>resp.json())
     .then((addName)=>setNewName(addName))
     onAddNewChar(nameData.name) */
 
   setNameData({
-    name:''
+    name:'',
+    celestial:''
   })
 }
 
   return(
     <div>
       <h1 style={{color: "silver"}}>Add a Character</h1>
-    <form className="NewCharacter" onSubmit={handleSubmit}>
+    <form className="New" onSubmit={handleSubmit}>
       <label style={{color: "lightgreen"}}>
-        Name: 
+        Name   :  
         <input
           type="text"
+          placeholder="New Character"
           name="name"
           value={nameData.name}
           onChange={handleChange}
         />
       </label>
-      {/* <button type="submit">Add Character</button> */}
+      <label style={{color: "lightsteelblue"}}>
+          Celestial Weapon:
+          <input style={{textAlign: "center"}}
+            type="text"
+            placeholder="New Celestial Weapon"
+            name="celestial"
+            value={nameData.celestial}
+            onChange={handleChange}
+          />
+      </label>
+      <button type="submit">Add New</button>
     </form>
     </div>
   )

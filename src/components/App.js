@@ -70,7 +70,7 @@ function App() {
             <Story story={beginning}/>
           </Route>
           <Route path="/newchar">
-            <NewChar onAddNewChar={handleAddNewChar}/>
+            <NewChar onAddNewChar={handleAddNewChar} onAddNewWeap={handleAddNewChar}/>
           </Route>
         </Switch>
     </div>

@@ -7,7 +7,7 @@ function List({names}){
 
   return(
     <ul>
-      <h2 style={{color: "green"}} text-align="center">
+      <h2 style={{color: "green"}}>
         {names}
       </h2>
     </ul>

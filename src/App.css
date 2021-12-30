@@ -8,6 +8,18 @@ body {
   background-image: Linear-gradient( to bottom right, rgb(4, 8, 49), blue);
 }
 
+h3 {
+  font-family: fantasy;
+}
+
+h5 {
+  text-align:center;
+}
+
+ul {
+  text-align: center;
+}
+
 .App-logo {
   height: 40vmin;
   pointer-events: none;
