@@ -51,9 +51,7 @@ function App() {
 
   function handleAddNewChar(newChar){
     setChars([...chars, newChar])
-    console.log("newChar: ", newChar)
-    console.log("newChars: ", chars)
-  }
+  } 
 
   return (
     <div className="App">

@@ -1,24 +1,38 @@
 import React, { useState } from "react"
 
 function NewChar({onAddNewChar}){
-  const [newName, setNewName] = useState("");
+  const [nameData, setNameData] = useState({
+    name:''
+  });
+
+  function handleChange(event){
+    setNameData ({
+      ...nameData,
+      [event.target.name]: event.target.value
+    });
+  }
+
 
   function handleSubmit(event){
     event.preventDefault();
-    const nameData = {
-      "name": newName
-    }; console.log("ND: ", nameData)
 
   fetch("http://localhost:3000/final-fantasy-x", {
     method: "POST",
     header: {
       "Content-Type": "application/json",
     },
-    body: JSON.stringify(nameData),
+    body: JSON.stringify({
+      "name": nameData.name
+    }),
   })
-    .then((resp)=>resp.json())
-    .then((addName)=>onAddNewChar(addName))
-    console.log("newNamePost: ",newName)
+  onAddNewChar(nameData)
+    /* .then((resp)=>resp.json())
+    .then((addName)=>setNewName(addName))
+    onAddNewChar(nameData.name) */
+
+  setNameData({
+    name:''
+  })
 }
 
   return(
@@ -30,10 +44,11 @@ function NewChar({onAddNewChar}){
         <input
           type="text"
           name="name"
-          value={newName}
-          onChange={(event) => setNewName(event.target.value)}
+          value={nameData.name}
+          onChange={handleChange}
         />
       </label>
+      {/* <button type="submit">Add Character</button> */}
     </form>
     </div>
   )

@@ -3,7 +3,7 @@ import List from "./List";
 import { Link } from "react-router-dom";
  
 function CelestialWeapons({celestial}){
-  console.log("cels: ",celestial)
+  console.log("(Ce)cels: ",celestial)
   const displayCels = celestial.map((weapons, id) => {
     return <List 
       key={id}

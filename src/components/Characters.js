@@ -6,7 +6,7 @@ import List from "./List"
 
 function Characters({id, names}){
   
-  console.log("names: ", names)
+  console.log("(Ch)names: ", names)
   const displayChars = names.map((char, id)=> {
     return <List 
       key={id}
