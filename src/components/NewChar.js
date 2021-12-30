@@ -41,10 +41,10 @@ function NewChar({onAddNewChar, onAddNewWeap}){
 
   return(
     <div>
-      <h1 style={{color: "silver"}}>Add a Character</h1>
+      <h1>Add a Character</h1>
     <form className="New" onSubmit={handleSubmit}>
       <label style={{color: "lightgreen"}}>
-        Name   :  
+        Name:  
         <input
           type="text"
           placeholder="New Character"

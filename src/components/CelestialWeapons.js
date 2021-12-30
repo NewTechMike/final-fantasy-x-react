@@ -24,8 +24,8 @@ function CelestialWeapons({celestial}){
 
   return(
     <div>
-      <h1 style={{color: "silver"}}>Welcome to the Celestial Weapons Page!</h1>
-      <h5 style={{color: "grey"}}>These are the Ultimate Weapons in the game</h5>
+      <h1>Welcome to the Celestial Weapons Page!</h1>
+      <h5 style={{color: "grey"}}>(These are the Ultimate Weapons in the game)</h5>
       <ul>
         {displayCels} 
         {/* renderCels */}

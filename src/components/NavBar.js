@@ -8,7 +8,7 @@ const linkStyles ={
   margin: "0 6px 6px",
   background: "lightblue",
   textDecoration: "none",
-  color: "white",
+  color: "navy"
   //fill this with the style of the nav boxes
   // at the top of the page
 };

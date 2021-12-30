@@ -6,11 +6,13 @@ function List({names}){
   // next step, use this to render Cel weapons
 
   return(
-    <ul>
-      <h2 style={{color: "green"}}>
-        {names}
-      </h2>
-    </ul>
+    <div className="list">
+      <ul>
+        <h2 style={{color: "#9932cc"}}>
+          {names}
+        </h2>
+      </ul>
+    </div>
   )
 }
 
