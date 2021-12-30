@@ -55,7 +55,7 @@ function NewChar({onAddNewChar, onAddNewWeap}){
       </label>
       <label style={{color: "lightsteelblue"}}>
           Celestial Weapon:
-          <input style={{textAlign: "center"}}
+          <input 
             type="text"
             placeholder="New Celestial Weapon"
             name="celestial"
